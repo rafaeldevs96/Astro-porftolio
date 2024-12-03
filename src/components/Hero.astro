@@ -1,3 +1,8 @@
+---
+import { Image } from "astro:assets";
+import imagenHero from "../img/hero-porfolio-2.webp"
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -22,7 +27,7 @@
    </blockquote>
 
 <div class=" flex justify-center mt-6 " >
-    <img class="h-48 " src="/public/hero-porfolio-2.webp" alt="imagen de desarrollador web">
+    <Image class="h-48 " width="350" src={imagenHero} alt="imagen de desarrollador web">
 </div>
 </section>
 </body>
