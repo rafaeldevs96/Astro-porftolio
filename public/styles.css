@@ -1,0 +1,57 @@
+/* styles for menu hamburguesa */
+
+.open-menu,.close-menu{
+    display: none;
+}
+
+.logo-tipo{
+    height: 150px;
+    width: auto;
+    margin: 0;
+}
+
+
+
+@media screen and (max-width: 550px){
+    .open-menu,.close-menu{
+        display: block;
+    }
+
+    .menu-h{
+       opacity: 0;
+       visibility: hidden;
+
+       display: flex;
+       background-color: black;
+       color: white;
+       flex-direction: column;
+       align-items: end;
+       gap: 1rem;
+       position: absolute;
+       top: 0;
+       right: 0;
+       bottom: 0;
+       padding: 2rem;
+    }
+
+
+
+    .menu-h.visibilty{
+        opacity: 1;
+        visibility: visible;
+    }
+    .menu-h-items{
+        flex-direction: column;
+        align-items: end;
+    }
+}
+
+
+.menu-h{
+    transition: all 0.3s ease-in-out;
+  }
+
+ 
+  html {
+    scroll-behavior: smooth;
+  }
