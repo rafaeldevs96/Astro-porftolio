@@ -1,34 +1,75 @@
 ---
 import { Image } from "astro:assets";
-import imagenHero from "../img/hero-porfolio-2.webp"
+import imagenHero from "../img/hero-porfolio-2.webp";
 ---
 
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+  <body>
+    <section class="hero text-center mt-20">
+      <h1 class="text-7xl">Front Developer</h1>
 
-</head>
-<body>
-<section class="hero text-center mt-20 ">
-
-    <h1 class="text-7xl">Fron Developer</h1>
-  
-    
-    <blockquote class="p-4 my-4 rounded">
-        <p class="text-lg font-italic ">
-         <strong>  " The best software developers are those who truly enjoy what they do the most "</strong>
+      <blockquote class="p-4 my-4 rounded">
+        <p class="text-lg font-italic">
+          <strong>
+            " The best software developers are those who truly enjoy what they
+            do the most "</strong
+          >
         </p>
         <p></p>
-        <footer class="">
-           - Rafael Gomez
-        </footer>
-   </blockquote>
+        <footer class="">- Rafael Gomez</footer>
+      </blockquote>
+      <div class="flex justify-center mt-6">
+        <Image
+          class="h-auto"
+          width="350"
+          src={imagenHero}
+          alt="imagen de desarrollador web"
+        />
+        <br />
+       <!--  <button class="btn-usuario">Cambia de Uusuario</button> -->
+        <!-- <img class="auto" width="350" src="/src/img/hero-porfolio-2.webp" alt="dsads"> -->
+      </div>
+      <script>
+        /*     let img = document.querySelector("img");
+        
+        img.onclick = function(){
+        let srcImg = img.getAttribute("src")
+        if( srcImg ==="/src/img/hero-porfolio-2.webp")
+        img.setAttribute("src","/src/img/hero-porfolio-3.jpg")
+        else{
+            img.setAttribute("src","/src/img/hero-porfolio-2.webp")
+    }   
+    }  */
 
-<div class=" flex justify-center mt-6 " >
-    <Image class="h-48 " width="350" src={imagenHero} alt="imagen de desarrollador web">
-</div>
-</section>
-</body>
+       /*  let mybtn = document.querySelector("button");
+        let myTitle = document.querySelector("h1"); */
+
+       /*  function UserName() {
+          let myName = prompt("tell me your name");
+          if (!myName) {
+            UserName();
+          } else {
+            localStorage.setItem("nombre", myName);
+
+            myTitle.textContent = `binvenido brother  ${myName} aqui odiamos a moreno `;
+          }
+        }
+
+        if (!localStorage.getItem("nombre")) {
+          UserName();
+        } else {
+          let nameSave = localStorage.getItem("nombre");
+          myTitle.textContent = `binvenido brother  ${nameSave} aqui odiamos a moreno `;
+        }
+        mybtn.onclick = function () {
+          UserName();
+        }; */
+      </script>
+    </section>
+  </body>
 </html>
